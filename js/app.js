@@ -14,7 +14,7 @@ const sampleServices = [
   {
     id: "s1",
     title: "Reforma de banheiro - Pedro Construtor",
-    category: "Pedreiro",
+    categories: ["Pedreiro(a)", "Azulejista / Pisagista"],
     city: "São Paulo",
     contact: "WhatsApp: +55 11 9xxxx-xxxx",
     description:
@@ -22,12 +22,12 @@ const sampleServices = [
     createdAt: "2025-09-10",
     averageRating: 4.6,
     reviewsCount: 24,
-    averagePriceRating: 3, // Calculado a partir das avaliações
+    averagePriceRating: 3,
   },
   {
     id: "s2",
     title: "Instalação elétrica residencial - Luz & Cia",
-    category: "Eletricista",
+    categories: ["Eletricista"],
     city: "Campinas",
     contact: "Email: luz@exemplo.com",
     description:
@@ -40,7 +40,7 @@ const sampleServices = [
   {
     id: "s3",
     title: "Marcenaria sob medida - Oficina dos Móveis",
-    category: "Marcenaria",
+    categories: ["Marceneiro(a)", "Montador(a) de Móveis"],
     city: "São Paulo",
     contact: "WhatsApp: +55 11 9yyyy-yyyy",
     description:
@@ -107,11 +107,11 @@ const UIRenderer = {
   },
 
   renderPriceRating(priceRating) {
-    if (!priceRating) return '<span class="text-body-tertiary">Sem avaliações</span>';
+    if (!priceRating) return '<span class="text-muted">Sem avaliações</span>';
 
     let dollars = "";
     for (let i = 1; i <= 5; i++) {
-      dollars += i <= priceRating ? "$" : '<span class="text-body-tertiary">$</span>';
+      dollars += i <= priceRating ? "$" : '<span class="text-muted">$</span>';
     }
     return `<span class="text-success fw-bold">${dollars}</span>`;
   },
@@ -120,7 +120,7 @@ const UIRenderer = {
     const initials = service.title.split(" ")[0].slice(0, 2).toUpperCase();
     const priceInfo = service.averagePriceRating
       ? this.renderPriceRating(service.averagePriceRating)
-      : '<span class="text-body-tertiary small">Sem avaliação de preço</span>';
+      : '<span class="text-muted small">Sem avaliação de preço</span>';
 
     const div = document.createElement("div");
     div.className = "col-md-6 col-lg-4";
@@ -131,7 +131,7 @@ const UIRenderer = {
             <div class="logo-circle me-2">${initials}</div>
             <div class="flex-grow-1">
               <h6 class="card-title mb-0">${service.title}</h6>
-              <small class="text-body-tertiary">${service.category} • ${
+              <small class="text-muted">${service.category} • ${
       service.city
     }</small>
             </div>
@@ -141,7 +141,7 @@ const UIRenderer = {
 
           <div class="d-flex justify-content-between align-items-center mb-2">
             <div>${this.renderStars(service.averageRating)}</div>
-            <small class="text-body-tertiary">${service.reviewsCount} avaliações</small>
+            <small class="text-muted">${service.reviewsCount} avaliações</small>
           </div>
 
           <div class="d-flex justify-content-between align-items-center">

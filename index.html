@@ -212,41 +212,198 @@
                 />
               </div>
               
-              <div class="col-md-4">
-                <label class="form-label fw-semibold">Categoria *</label>
-                <select name="category" class="form-select" required>
-                  <option value="">Selecione...</option>
-                  <option value="Arquiteto(a)">Arquiteto(a)</option>
-                  <option value="Armador(a) de Ferragens">Armador(a) de Ferragens</option>
-                  <option value="Azulejista / Pisagista">Azulejista / Pisagista</option>
-                  <option value="Bombeiro(a) Hidráulico / Encanador(a)">Bombeiro(a) Hidráulico / Encanador(a)</option>
-                  <option value="Calheiro(a)">Calheiro(a)</option>
-                  <option value="Carpinteiro(a)">Carpinteiro(a)</option>
-                  <option value="Desentupidor(a)">Desentupidor(a)</option>
-                  <option value="Designer de Interiores">Designer de Interiores</option>
-                  <option value="Eletricista">Eletricista</option>
-                  <option value="Engenheiro(a) Civil">Engenheiro(a) Civil</option>
-                  <option value="Gesseiro(a)">Gesseiro(a)</option>
-                  <option value="Impermeabilizador(a)">Impermeabilizador(a)</option>
-                  <option value="Instalador(a) de Ar Condicionado">Instalador(a) de Ar Condicionado</option>
-                  <option value="Instalador(a) de Drywall">Instalador(a) de Drywall</option>
-                  <option value="Instalador(a) de Gás">Instalador(a) de Gás</option>
-                  <option value="Instalador(a) de Sistemas de Segurança">Instalador(a) de Sistemas de Segurança</option>
-                  <option value="Jardineiro(a) / Paisagista">Jardineiro(a) / Paisagista</option>
-                  <option value="Limpador(a) Pós-Obra">Limpador(a) Pós-Obra</option>
-                  <option value="Marceneiro(a)">Marceneiro(a)</option>
-                  <option value="Marido de Aluguel">Marido de Aluguel</option>
-                  <option value="Mestre de Obras">Mestre de Obras</option>
-                  <option value="Montador(a) de Andaimes">Montador(a) de Andaimes</option>
-                  <option value="Montador(a) de Móveis">Montador(a) de Móveis</option>
-                  <option value="Terraplanagem">Terraplanagem</option>
-                  <option value="Pedreiro(a)">Pedreiro(a)</option>
-                  <option value="Pintor(a)">Pintor(a)</option>
-                  <option value="Serralheiro(a)">Serralheiro(a)</option>
-                  <option value="Técnico(a) em Edificações">Técnico(a) em Edificações</option>
-                  <option value="Topógrafo(a)">Topógrafo(a)</option>
-                  <option value="Vidraceiro(a)">Vidraceiro(a)</option>
-                </select>
+              <div class="col-12">
+                <label class="form-label fw-semibold">
+                  Categorias * 
+                  <small class="text-muted">(selecione uma ou mais)</small>
+                </label>
+                <div id="categoriesCheckboxes" class="border rounded p-3" style="max-height: 250px; overflow-y: auto;">
+                  <div class="row g-2">
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Arquiteto(a)" id="cat1">
+                        <label class="form-check-label" for="cat1">Arquiteto(a)</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Armador(a) de Ferragens" id="cat2">
+                        <label class="form-check-label" for="cat2">Armador(a) de Ferragens</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Azulejista / Pisagista" id="cat3">
+                        <label class="form-check-label" for="cat3">Azulejista / Pisagista</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Bombeiro(a) Hidráulico / Encanador(a)" id="cat4">
+                        <label class="form-check-label" for="cat4">Bombeiro(a) Hidráulico</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Calheiro(a)" id="cat5">
+                        <label class="form-check-label" for="cat5">Calheiro(a)</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Carpinteiro(a)" id="cat6">
+                        <label class="form-check-label" for="cat6">Carpinteiro(a)</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Desentupidor(a)" id="cat7">
+                        <label class="form-check-label" for="cat7">Desentupidor(a)</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Designer de Interiores" id="cat8">
+                        <label class="form-check-label" for="cat8">Designer de Interiores</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Eletricista" id="cat9">
+                        <label class="form-check-label" for="cat9">Eletricista</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Engenheiro(a) Civil" id="cat10">
+                        <label class="form-check-label" for="cat10">Engenheiro(a) Civil</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Gesseiro(a)" id="cat11">
+                        <label class="form-check-label" for="cat11">Gesseiro(a)</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Impermeabilizador(a)" id="cat12">
+                        <label class="form-check-label" for="cat12">Impermeabilizador(a)</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Instalador(a) de Ar Condicionado" id="cat13">
+                        <label class="form-check-label" for="cat13">Instalador(a) de Ar</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Instalador(a) de Drywall" id="cat14">
+                        <label class="form-check-label" for="cat14">Instalador(a) de Drywall</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Instalador(a) de Gás" id="cat15">
+                        <label class="form-check-label" for="cat15">Instalador(a) de Gás</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Instalador(a) de Sistemas de Segurança" id="cat16">
+                        <label class="form-check-label" for="cat16">Instalador(a) Segurança</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Jardineiro(a) / Paisagista" id="cat17">
+                        <label class="form-check-label" for="cat17">Jardineiro(a) / Paisagista</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Limpador(a) Pós-Obra" id="cat18">
+                        <label class="form-check-label" for="cat18">Limpador(a) Pós-Obra</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Marceneiro(a)" id="cat19">
+                        <label class="form-check-label" for="cat19">Marceneiro(a)</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Marido de Aluguel" id="cat20">
+                        <label class="form-check-label" for="cat20">Marido de Aluguel</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Mestre de Obras" id="cat21">
+                        <label class="form-check-label" for="cat21">Mestre de Obras</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Montador(a) de Andaimes" id="cat22">
+                        <label class="form-check-label" for="cat22">Montador(a) de Andaimes</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Montador(a) de Móveis" id="cat23">
+                        <label class="form-check-label" for="cat23">Montador(a) de Móveis</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Terraplanagem" id="cat24">
+                        <label class="form-check-label" for="cat24">Terraplanagem</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Pedreiro(a)" id="cat25">
+                        <label class="form-check-label" for="cat25">Pedreiro(a)</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Pintor(a)" id="cat26">
+                        <label class="form-check-label" for="cat26">Pintor(a)</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Serralheiro(a)" id="cat27">
+                        <label class="form-check-label" for="cat27">Serralheiro(a)</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Técnico(a) em Edificações" id="cat28">
+                        <label class="form-check-label" for="cat28">Técnico(a) Edificações</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Topógrafo(a)" id="cat29">
+                        <label class="form-check-label" for="cat29">Topógrafo(a)</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input category-checkbox" type="checkbox" value="Vidraceiro(a)" id="cat30">
+                        <label class="form-check-label" for="cat30">Vidraceiro(a)</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="categoryError" class="text-danger small mt-1" style="display: none;">
+                  Selecione pelo menos uma categoria
+                </div>
               </div>
 
               <div class="col-md-6">
