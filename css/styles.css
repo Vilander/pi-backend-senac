@@ -1,0 +1,58 @@
+:root {
+     --amarelo: #fee63e;
+     --amarelo-ouro: #fbd455;
+     --azul-claro: #b2c0e3;
+     --azul-marinho: #024768;
+     --branco: #fdfdfd;
+     --cinza: #858585;
+     --laranja-principal: #f16319;
+     --marrom-suave: #945b50;
+}
+
+/* Custom bootstrap color helpers */
+.bg-azul {
+     background-color: var(--azul-marinho) !important;
+}
+
+.text-azul-claro {
+     color: var(--azul-claro) !important;
+}
+
+.btn-laranja {
+     background-color: var(--laranja-principal);
+     border-color: var(--laranja-principal);
+     color: #fff;
+}
+
+.btn-laranja:hover {
+     background-color: #d85613;
+     border-color: #d85613;
+}
+
+/* Logo */
+.logo-circle {
+     background: var(--amarelo);
+     color: #111;
+     width: 48px;
+     height: 48px;
+     border-radius: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-weight: 700;
+}
+
+/* Cards */
+.card-service {
+     transition: all 0.2s ease-in-out;
+}
+
+.card-service:hover {
+     transform: scale(1.02);
+}
+
+/* Estrelas */
+.star {
+     color: var(--amarelo-ouro);
+     font-size: 1rem;
+}
