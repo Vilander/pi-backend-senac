@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ConstruMarket — Marketplace de Serviços</title>
+    <title>ConstruMarket – Marketplace de Serviços</title>
 
     <!-- Bootstrap CSS -->
     <link
@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
 
-    <!-- Ícones opcionais -->
+    <!-- Ícones -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
@@ -56,54 +56,55 @@
       </div>
     </header>
 
-    
     <main class="container my-4">
       <div class="row g-4">
         <!-- SIDEBAR / FILTROS -->
         <aside class="col-lg-3">
           <div class="card shadow-sm border-0">
             <div class="card-body">
-              <h5 class="card-title mb-3">Filtros</h5>
+              <h5 class="card-title mb-3">
+                <i class="bi bi-funnel me-2"></i>Filtros
+              </h5>
 
               <div class="mb-3">
-                <label class="form-label">Categoria</label>
+                <label class="form-label fw-semibold">Categoria</label>
                 <select id="filterCategory" class="form-select">
-                  <option value="">Selecione uma categoria</option>
-                  <option>Arquiteto(a)</option>
-                  <option>Armador(a) de Ferragens</option>
-                  <option>Azulejista / Pisagista</option>
-                  <option>Bombeiro(a) Hidráulico / Encanador(a)</option>
-                  <option>Calheiro(a)</option>
-                  <option>Carpinteiro(a)</option>
-                  <option>Desentupidor(a)</option>
-                  <option>Designer de Interiores</option>
-                  <option>Eletricista</option>
-                  <option>Engenheiro(a) Civil</option>
-                  <option>Gesseiro(a)</option>
-                  <option>Impermeabilizador(a)</option>
-                  <option>Instalador(a) de Ar Condicionado</option>
-                  <option>Instalador(a) de Drywall</option>
-                  <option>Instalador(a) de Gás</option>
-                  <option>Instalador(a) de Sistemas de Segurança</option>
-                  <option>Jardineiro(a) / Paisagista</option>
-                  <option>Limpador(a) Pós-Obra</option>
-                  <option>Marceneiro(a)</option>
-                  <option>Marido de Aluguel</option>
-                  <option>Mestre de Obras</option>
-                  <option>Montador(a) de Andaimes</option>
-                  <option>Montador(a) de Móveis</option>
-                  <option>Terraplanagem</option>
-                  <option value="Pedreiro">Pedreiro(a)</option>
-                  <option>Pintor(a)</option>
-                  <option>Serralheiro(a)</option>
-                  <option>Técnico(a) em Edificações</option>
-                  <option>Topógrafo(a)</option>
-                  <option>Vidraceiro(a)</option>
+                  <option value="">Todas as categorias</option>
+                  <option value="Arquiteto(a)">Arquiteto(a)</option>
+                  <option value="Armador(a) de Ferragens">Armador(a) de Ferragens</option>
+                  <option value="Azulejista / Pisagista">Azulejista / Pisagista</option>
+                  <option value="Bombeiro(a) Hidráulico / Encanador(a)">Bombeiro(a) Hidráulico / Encanador(a)</option>
+                  <option value="Calheiro(a)">Calheiro(a)</option>
+                  <option value="Carpinteiro(a)">Carpinteiro(a)</option>
+                  <option value="Desentupidor(a)">Desentupidor(a)</option>
+                  <option value="Designer de Interiores">Designer de Interiores</option>
+                  <option value="Eletricista">Eletricista</option>
+                  <option value="Engenheiro(a) Civil">Engenheiro(a) Civil</option>
+                  <option value="Gesseiro(a)">Gesseiro(a)</option>
+                  <option value="Impermeabilizador(a)">Impermeabilizador(a)</option>
+                  <option value="Instalador(a) de Ar Condicionado">Instalador(a) de Ar Condicionado</option>
+                  <option value="Instalador(a) de Drywall">Instalador(a) de Drywall</option>
+                  <option value="Instalador(a) de Gás">Instalador(a) de Gás</option>
+                  <option value="Instalador(a) de Sistemas de Segurança">Instalador(a) de Sistemas de Segurança</option>
+                  <option value="Jardineiro(a) / Paisagista">Jardineiro(a) / Paisagista</option>
+                  <option value="Limpador(a) Pós-Obra">Limpador(a) Pós-Obra</option>
+                  <option value="Marceneiro(a)">Marceneiro(a)</option>
+                  <option value="Marido de Aluguel">Marido de Aluguel</option>
+                  <option value="Mestre de Obras">Mestre de Obras</option>
+                  <option value="Montador(a) de Andaimes">Montador(a) de Andaimes</option>
+                  <option value="Montador(a) de Móveis">Montador(a) de Móveis</option>
+                  <option value="Terraplanagem">Terraplanagem</option>
+                  <option value="Pedreiro(a)">Pedreiro(a)</option>
+                  <option value="Pintor(a)">Pintor(a)</option>
+                  <option value="Serralheiro(a)">Serralheiro(a)</option>
+                  <option value="Técnico(a) em Edificações">Técnico(a) em Edificações</option>
+                  <option value="Topógrafo(a)">Topógrafo(a)</option>
+                  <option value="Vidraceiro(a)">Vidraceiro(a)</option>
                 </select>
               </div>
 
               <div class="mb-3">
-                <label class="form-label">Cidade</label>
+                <label class="form-label fw-semibold">Cidade</label>
                 <input
                   id="filterCity"
                   type="text"
@@ -113,18 +114,23 @@
               </div>
 
               <div class="mb-3">
-                <label class="form-label">Faixa de preço</label>
+                <label class="form-label fw-semibold">
+                  Faixa de preço
+                  <i class="bi bi-info-circle text-muted" 
+                     data-bs-toggle="tooltip" 
+                     title="Baseado nas avaliações de clientes"></i>
+                </label>
                 <select id="filterPrice" class="form-select">
                   <option value="">Qualquer</option>
-                  <option value="0-100">Até R$100</option>
-                  <option value="100-500">R$100 — R$500</option>
-                  <option value="500-2000">R$500 — R$2.000</option>
-                  <option value="2000+">R$2.000+</option>
+                  <option value="0-100">$ - Muito barato</option>
+                  <option value="100-500">$$ - Barato</option>
+                  <option value="500-2000">$$$ - Justo</option>
+                  <option value="2000+">$$$$ - Caro</option>
                 </select>
               </div>
 
               <div class="mb-3">
-                <label class="form-label">Ordenar por</label>
+                <label class="form-label fw-semibold">Ordenar por</label>
                 <select id="sortBy" class="form-select">
                   <option value="relevance">Relevância</option>
                   <option value="ratingDesc">Avaliação (maior)</option>
@@ -135,10 +141,14 @@
               </div>
 
               <hr />
-              <h6>Anúncios futuros</h6>
-              <p class="text-muted small mb-0">
-                Espaço reservado para anúncios pagos e promoções.
-              </p>
+              <div class="text-center p-3 bg-light rounded">
+                <h6 class="mb-2">
+                  <i class="bi bi-megaphone"></i> Anúncios
+                </h6>
+                <p class="text-muted small mb-0">
+                  Espaço reservado para anúncios pagos e promoções.
+                </p>
+              </div>
             </div>
           </div>
         </aside>
@@ -146,9 +156,11 @@
         <!-- LISTAGEM -->
         <section class="col-lg-9">
           <div class="d-flex justify-content-between align-items-center mb-3">
-            <h4 class="mb-0">Anúncios de serviços</h4>
+            <h4 class="mb-0">
+              <i class="bi bi-grid me-2"></i>Anúncios de serviços
+            </h4>
             <div id="resultsInfo" class="text-muted small">
-              Mostrando <span id="countResults">0</span> resultados
+              Mostrando <span id="countResults" class="fw-bold">0</span> resultados
             </div>
           </div>
 
@@ -159,86 +171,128 @@
             class="alert alert-warning text-center mt-4"
             hidden
           >
+            <i class="bi bi-exclamation-triangle me-2"></i>
             Nenhum serviço encontrado. Tente outros filtros.
           </div>
         </section>
       </div>
     </main>
 
-    <!-- MODAL -->
+    <!-- MODAL DE CADASTRO -->
     <div class="modal fade" id="modal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Divulgar serviço</h5>
+          <div class="modal-header bg-azul text-white">
+            <h5 class="modal-title">
+              <i class="bi bi-plus-circle me-2"></i>Divulgar serviço
+            </h5>
             <button
               type="button"
-              class="btn-close"
+              class="btn-close btn-close-white"
               data-bs-dismiss="modal"
               aria-label="Fechar"
             ></button>
           </div>
           <form id="serviceForm" class="modal-body">
+            <div class="alert alert-info">
+              <i class="bi bi-info-circle me-2"></i>
+              <strong>Atenção:</strong> A avaliação de preço será definida pelos clientes que utilizarem seu serviço.
+            </div>
+
             <div class="row g-3">
-              <div class="col-md-6">
-                <label class="form-label">Nome do serviço / empresa</label>
-                <input name="title" required class="form-control" />
+              <div class="col-md-8">
+                <label class="form-label fw-semibold">
+                  Nome do serviço / empresa *
+                </label>
+                <input 
+                  name="title" 
+                  required 
+                  class="form-control"
+                  placeholder="Ex: Reformas Rápidas - João Silva"
+                />
               </div>
-              <div class="col-md-6">
-                <label class="form-label">Categoria</label>
+              
+              <div class="col-md-4">
+                <label class="form-label fw-semibold">Categoria *</label>
                 <select name="category" class="form-select" required>
-                  <option>Pedreiro</option>
-                  <option>Eletricista</option>
-                  <option>Hidráulica</option>
-                  <option>Marcenaria</option>
-                  <option>Engenharia</option>
-                  <option>Arquitetura</option>
-                  <option>Marido-de-aluguel</option>
+                  <option value="">Selecione...</option>
+                  <option value="Arquiteto(a)">Arquiteto(a)</option>
+                  <option value="Armador(a) de Ferragens">Armador(a) de Ferragens</option>
+                  <option value="Azulejista / Pisagista">Azulejista / Pisagista</option>
+                  <option value="Bombeiro(a) Hidráulico / Encanador(a)">Bombeiro(a) Hidráulico / Encanador(a)</option>
+                  <option value="Calheiro(a)">Calheiro(a)</option>
+                  <option value="Carpinteiro(a)">Carpinteiro(a)</option>
+                  <option value="Desentupidor(a)">Desentupidor(a)</option>
+                  <option value="Designer de Interiores">Designer de Interiores</option>
+                  <option value="Eletricista">Eletricista</option>
+                  <option value="Engenheiro(a) Civil">Engenheiro(a) Civil</option>
+                  <option value="Gesseiro(a)">Gesseiro(a)</option>
+                  <option value="Impermeabilizador(a)">Impermeabilizador(a)</option>
+                  <option value="Instalador(a) de Ar Condicionado">Instalador(a) de Ar Condicionado</option>
+                  <option value="Instalador(a) de Drywall">Instalador(a) de Drywall</option>
+                  <option value="Instalador(a) de Gás">Instalador(a) de Gás</option>
+                  <option value="Instalador(a) de Sistemas de Segurança">Instalador(a) de Sistemas de Segurança</option>
+                  <option value="Jardineiro(a) / Paisagista">Jardineiro(a) / Paisagista</option>
+                  <option value="Limpador(a) Pós-Obra">Limpador(a) Pós-Obra</option>
+                  <option value="Marceneiro(a)">Marceneiro(a)</option>
+                  <option value="Marido de Aluguel">Marido de Aluguel</option>
+                  <option value="Mestre de Obras">Mestre de Obras</option>
+                  <option value="Montador(a) de Andaimes">Montador(a) de Andaimes</option>
+                  <option value="Montador(a) de Móveis">Montador(a) de Móveis</option>
+                  <option value="Terraplanagem">Terraplanagem</option>
+                  <option value="Pedreiro(a)">Pedreiro(a)</option>
+                  <option value="Pintor(a)">Pintor(a)</option>
+                  <option value="Serralheiro(a)">Serralheiro(a)</option>
+                  <option value="Técnico(a) em Edificações">Técnico(a) em Edificações</option>
+                  <option value="Topógrafo(a)">Topógrafo(a)</option>
+                  <option value="Vidraceiro(a)">Vidraceiro(a)</option>
                 </select>
               </div>
 
-              <div class="col-md-4">
-                <label class="form-label">Preço médio (R$)</label>
-                <input
-                  name="price"
-                  type="number"
-                  min="0"
-                  required
+              <div class="col-md-6">
+                <label class="form-label fw-semibold">Cidade *</label>
+                <input 
+                  name="city" 
+                  required 
                   class="form-control"
+                  placeholder="Ex: São Paulo"
                 />
               </div>
 
-              <div class="col-md-4">
-                <label class="form-label">Cidade</label>
-                <input name="city" required class="form-control" />
-              </div>
-
-              <div class="col-md-4">
-                <label class="form-label">Contato</label>
+              <div class="col-md-6">
+                <label class="form-label fw-semibold">Contato *</label>
                 <input
                   name="contact"
+                  required
                   class="form-control"
-                  placeholder="telefone / e-mail / WhatsApp"
+                  placeholder="Telefone / WhatsApp / E-mail"
                 />
               </div>
 
               <div class="col-12">
-                <label class="form-label">Descrição</label>
+                <label class="form-label fw-semibold">Descrição do serviço</label>
                 <textarea
                   name="description"
-                  rows="3"
+                  rows="4"
                   class="form-control"
+                  placeholder="Descreva os serviços que você oferece, sua experiência e diferenciais..."
                 ></textarea>
+                <small class="text-muted">
+                  Quanto mais detalhes, melhor será sua apresentação aos clientes.
+                </small>
               </div>
             </div>
+            
             <div class="modal-footer">
-              <button type="submit" class="btn btn-laranja">Publicar</button>
+              <button type="submit" class="btn btn-laranja">
+                <i class="bi bi-check-circle me-2"></i>Publicar serviço
+              </button>
               <button
                 type="button"
                 class="btn btn-secondary"
                 data-bs-dismiss="modal"
               >
-                Cancelar
+                <i class="bi bi-x-circle me-2"></i>Cancelar
               </button>
             </div>
           </form>
@@ -247,15 +301,35 @@
     </div>
 
     <!-- FOOTER -->
-    <footer class="bg-light py-3 mt-4 border-top">
-      <div class="container d-flex justify-content-between small text-muted">
-        <div>&copy; <span id="year"></span> Vilander Costa</div>
-        <div>Projeto Integrador - TII</div>
+    <footer class="bg-light py-4 mt-5 border-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h6 class="fw-bold">ConstruMarket</h6>
+            <p class="text-muted small mb-0">
+              Conectando profissionais da construção civil com clientes em todo o Brasil.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p class="text-muted small mb-1">
+              &copy; <span id="year"></span> Vilander Costa
+            </p>
+            <p class="text-muted small mb-0">
+              Projeto Integrador - TII
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/app.js"></script>
+    
+    <!-- Inicializar tooltips -->
+    <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    </script>
   </body>
 </html>
